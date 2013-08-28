@@ -1,0 +1,58 @@
+/*
+Syntax error: File to import not found or unreadable: compass/support.
+              Load path: /var/www/drupal/sites/all/themes/quotes
+        on line 113 of ./sass/_init.scss
+        from line 10 of ./sass/styles.scss
+
+Backtrace:
+./sass/_init.scss:113
+./sass/styles.scss:10
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/import_node.rb:67:in `import'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/import_node.rb:28:in `imported_file'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/import_node.rb:37:in `css_import?'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/perform.rb:218:in `visit_import'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/base.rb:37:in `send'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/perform.rb:230:in `visit_import'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/perform.rb:230:in `map'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/perform.rb:230:in `visit_import'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/base.rb:37:in `send'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/perform.rb:109:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/base.rb:37:in `send'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/perform.rb:7:in `send'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/visitors/perform.rb:7:in `visit'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/engine.rb:359:in `_render_with_sourcemap'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/engine.rb:290:in `render_with_sourcemap'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/plugin/compiler.rb:337:in `update_stylesheet'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/plugin/compiler.rb:191:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/plugin/compiler.rb:188:in `each'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/plugin/compiler.rb:188:in `update_stylesheets'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/plugin/compiler.rb:223:in `watch'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/plugin.rb:107:in `send'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/plugin.rb:107:in `method_missing'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/exec.rb:490:in `watch_or_update'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/exec.rb:335:in `process_result'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/exec.rb:41:in `parse'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/../lib/sass/exec.rb:21:in `parse!'
+/var/lib/gems/1.8/gems/sass-3.3.0.alpha.229/bin/sass:9
+/usr/local/bin/sass:19:in `load'
+/usr/local/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass/support.\A               Load path: /var/www/drupal/sites/all/themes/quotes\A         on line 113 of ./sass/_init.scss\A         from line 10 of ./sass/styles.scss"; }
