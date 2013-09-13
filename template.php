@@ -130,4 +130,93 @@ function quotes_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ */
+function quotes_preprocess_html(&$vars) {
+  // Fixes page titles for login, register & password.
+  switch (current_path()) {
+    case 'user':
+      $vars['head_title_array']['title'] = t('Login');
+      $head_title = $vars['head_title_array'];
+      $vars['head_title'] = implode(' | ', $head_title);
+      break;
+    case 'user/register':
+      $vars['head_title_array']['title'] = t('Create new account');
+      $head_title = $vars['head_title_array'];
+      $vars['head_title'] = implode(' | ', $head_title);
+      break;
+    case 'user/password':
+      $vars['head_title_array']['title'] = t('Request new password');
+      $head_title = $vars['head_title_array'];
+      $vars['head_title'] = implode(' | ', $head_title);
+      break;
+ 
+    default:
+      break;
+  }
+}
+ 
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ */
+function quotes_preprocess_page(&$vars) {
+  /**
+  * Removes the tabs from user  login, register & password. Also fixes page titles
+  */
+  switch (current_path()) {
+    case 'user':
+      $vars['title'] = t('Login');
+      unset($vars['tabs']['#primary']);
+      break;
+    case 'user/register':
+      $vars['title'] = t('Create new account');
+      unset($vars['tabs']['#primary']);
+      break;
+    case 'user/password':
+      $vars['title'] = t('Request new password');
+      unset($vars['tabs']['#primary']);
+      break;
+ 
+    default:
+      break;
+  }
+}
+ 
+/**
+* Implements hook_form_FORM_ID_alter()
+*
+**/
+function quotes_form_user_login_alter(&$form, &$form_state, $form_id) {
+  $pass_suffix = '<div class="request-new-password">';
+  $pass_suffix .= l(t('Request new password'), 'user/password', array('attributes' => array('class' => 'dlg-login-password', 'title' => t('Get a new password'))));
+  $pass_suffix .= '</div>';
+  $form['pass']['#suffix'] = $pass_suffix;
 
+  if (user_register_access()):
+    $name_prefix = '<div class="create-new-account">';
+    $name_prefix .= l(t('Create new account'), 'user/register', array('attributes' => array('class' => 'dlg-login-register', 'title' => t('Create a new user account'))));
+    $name_prefix .= '</div>';
+    $form['name']['#prefix'] = $name_prefix;
+  endif;
+
+
+}
+
+function quotes_form_alter( &$form, &$form_state, $form_id )
+{
+    if (in_array( $form_id, array( 'user_login', 'user_login_block', 'user_pass')))
+    {
+        //kpr($form);
+        $form['name']['#attributes']['placeholder'] = t( 'Username or Email' );
+        $form['pass']['#attributes']['placeholder'] = t( 'Password' );
+    }
+    if (in_array( $form_id, array( 'user_register_form')))
+    {
+        //kpr($form);
+        $form['account']['name']['#attributes']['placeholder'] = t( 'Username' );
+        $form['account']['mail']['#attributes']['placeholder'] = t( 'Email' );
+    }
+}

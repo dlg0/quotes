@@ -433,13 +433,16 @@ a.tabs-secondary__tab-link.is-active {
   font-size: $submitted-font-size;
   color: $default-text-color-submitted;
   background-color: $background-transparent-color;
-  padding-left: $body-padding-left;
+  //padding-left: $body-padding-left;
   //float: right;
 
   li {
-    display: inline;
+    display: block;
+    float: left;
     list-style-type: none;
-    padding: 0 1em 0 0; /* LTR */
+    margin: 0.5em 0 0 0; /* LTR */
+    padding: 0 1em;
+    background-color: $background-transparent-color;
   }
 
   a {
@@ -689,6 +692,17 @@ a.button {
     width: $password-field-width;
     text-align: center;
   }
+  padding-top: rhythm(1);
+  div.form-item, div.form-actions {
+    padding-bottom: rhythm(1);
+    margin: 0;
+  }
+  div.description, label {
+    display: none;
+  }
+  div.create-new-account, div.request-new-password {
+    font-size: $create-new-account-font-size;
+  }
 }
 
 /**
@@ -713,9 +727,6 @@ html.js #user-login-form li.openid-link,
 #user-login-form li.openid-link {
   /* Un-do some of the padding on the ul list. */
   margin-left: -20px; /* LTR */
-}
-#user-login ul {
-  margin: rhythm(1) 0;
 }
 
 /**
@@ -857,10 +868,14 @@ tr.selected td {
 
 .field-image {
 	margin-top: 0.2em;
-        margin-bottom: rhythm(1);
+        margin-bottom: rhythm(0.15);
 	margin-left: auto;
         margin-right: auto;
-	width: 85%;
+	//width: 85%;
+}
+
+article.node-teaser {
+  margin-bottom: rhythm(1);
 }
 
 body {
@@ -886,8 +901,8 @@ body {
 .field-body p {
     background-color: $background-transparent-color;
     margin: 0;
-    padding: rhythm(1) 0;
-    padding-left: $body-padding-left;
+    padding: rhythm(1) $body-padding-left;
+    //padding-left: $body-padding-left;
 }
 
 .field-comment-body p {
@@ -916,3 +931,14 @@ a:hover, a:focus {
   color: $default-text-color-hover;
 }
 
+.google-plus-follow {
+  margin-bottom: 1em;
+}
+
+.google-plus, .facebook-block {
+  height: auto;
+  border-style: none;
+  background-color: $background-transparent-color;
+  padding: $body-padding-left;
+  position: fixed;
+}
