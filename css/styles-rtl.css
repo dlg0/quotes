@@ -173,16 +173,16 @@ ul {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003179}}
   .sidebar-first #content {
     float: right;
-    width: 80%;
-    margin-right: 20%;
-    margin-left: -100%;
+    width: 57.14286%;
+    margin-right: 14.28571%;
+    margin-left: -71.42857%;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003184}}
   .sidebar-first .region-sidebar-first {
     float: right;
-    width: 20%;
+    width: 14.28571%;
     margin-right: 0%;
-    margin-left: -20%;
+    margin-left: -14.28571%;
   }
 
   /**
@@ -196,46 +196,77 @@ ul {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003194}}
   .sidebar-second #content {
     float: right;
-    width: 80%;
+    width: 57.14286%;
     margin-right: 0%;
-    margin-left: -80%;
+    margin-left: -57.14286%;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003199}}
   .sidebar-second .region-sidebar-second {
     float: right;
-    width: 20%;
-    margin-right: 80%;
-    margin-left: -100%;
+    width: 14.28571%;
+    margin-right: 57.14286%;
+    margin-left: -71.42857%;
   }
 
   /**
    * The layout when there are two sidebars.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003209}}
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003212}}
   .two-sidebars #content {
     float: right;
-    width: 60%;
-    margin-right: 20%;
-    margin-left: -80%;
+    width: 71.42857%;
+    margin-right: 14.28571%;
+    margin-left: -85.71429%;
+    padding-left: 0;
+    padding-right: 0;
+    clear: right;
+    /* Apply the shared properties of grid items in a single, efficient ruleset. */
+    /* Span 1 column, starting in the 1st column from left. */
+    /* Span 1 column, starting in the 2nd column from left. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003216}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003219}}
+  .two-sidebars #content article.node-teaser {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003223}}
+  .two-sidebars #content article.node-teaser:nth-child(2n) {
+    float: right;
+    width: 50%;
+    margin-right: 0%;
+    margin-left: -50%;
+    clear: right;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003228}}
+  .two-sidebars #content article.node-teaser:nth-child(2n+1) {
+    float: right;
+    width: 50%;
+    margin-right: 50%;
+    margin-left: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003236}}
   .two-sidebars .region-sidebar-first {
     float: right;
-    width: 20%;
+    width: 14.28571%;
     margin-right: 0%;
-    margin-left: -20%;
+    margin-left: -14.28571%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal\/sites\/all\/themes\/quotes\/sass\/layouts\/_responsive\.scss}line{font-family:\00003241}}
   .two-sidebars .region-sidebar-second {
     float: right;
-    width: 20%;
-    margin-right: 80%;
+    width: 14.28571%;
+    margin-right: 85.71429%;
     margin-left: -100%;
   }
 }
